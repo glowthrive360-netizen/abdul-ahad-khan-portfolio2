@@ -1,0 +1,1 @@
+Open index.html in a modern browser. This is a static demo site with animated features using Three.js & GSAP.

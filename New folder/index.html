@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ABDUL AHAD KHAN — Junior Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- CDN libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand">AHAD</div>
+    <ul class="navlinks">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profile" class="section hero">
+      <div class="hero-left">
+        <h1 class="name-3d">ABDUL AHAD <span>KHAN</span></h1>
+        <p class="title">Junior Web Developer — Dhaka, Bangladesh</p>
+        <p class="goal">Goal: To build scalable web applications.</p>
+        <a class="cta" href="#projects">View Projects</a>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card" id="profileCard">
+          <img src="assets/for portfolio.jpg" alt="Profile" class="profile-img"/>
+          <div class="profile-meta">
+            <h3>ABDUL AHAD KHAN</h3>
+            <p>ak1266539@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-banner card" data-tilt>
+        <h2>About Me</h2>
+        <p>I am a passionate junior web developer with hands-on experience in building responsive and animated user interfaces. I enjoy turning ideas into interactive experiences using modern JavaScript, React, and backend tools. I have built projects such as an E-commerce app, a Task Manager, and a Weather App. My focus is on writing clean, maintainable code while delivering delightful UX. I am a quick learner, collaborative team member, and always eager to take on challenging problems to build scalable web applications.</p>
+      </div>
+      <div class="about-pic card">
+        <img src="assets/WhatsApp Image 2025-11-05 at 05.29.20_0189a021.jpg" alt="About" />
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card" data-tilt>
+          <h3>Frontend</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li></ul>
+        </div>
+        <div class="skill-card" data-tilt>
+          <h3>Backend</h3>
+          <ul><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
+        </div>
+        <div class="skill-card" data-tilt>
+          <h3>Other</h3>
+          <ul><li>Git</li><li>REST APIs</li><li>Deployment</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project card" data-tilt>
+          <div class="project-canvas" id="proj1-canvas"></div>
+          <div class="project-info">
+            <h3>E-commerce</h3>
+            <p>Full-stack e-commerce demo with product listing, cart and checkout flows.</p>
+            <a href="https://example.com" target="_blank" class="proj-link">Open Project</a>
+          </div>
+        </div>
+
+        <div class="project card" data-tilt>
+          <div class="project-canvas" id="proj2-canvas"></div>
+          <div class="project-info">
+            <h3>Task Manager</h3>
+            <p>Productivity app to create, manage, and filter tasks with user auth.</p>
+            <a href="https://example.com" target="_blank" class="proj-link">Open Project</a>
+          </div>
+        </div>
+
+        <div class="project card" data-tilt>
+          <div class="project-canvas" id="proj3-canvas"></div>
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <p>Weather forecast app using public APIs with dynamic visuals.</p>
+            <a href="https://example.com" target="_blank" class="proj-link">Open Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2>Experience</h2>
+      <div class="exp-card card">
+        <h3>Junior Web Developer — 6 months</h3>
+        <p>Worked on responsive front-end interfaces, implemented REST endpoints, collaborated on code reviews, and assisted in deploying demo projects. Focused on writing reusable components, optimizing performance, and improving accessibility. Contributed to project architecture planning and implemented animations and micro-interactions to elevate user experience.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <h2>Education</h2>
+      <div class="edu-list">
+        <div class="edu card">
+          <img src="assets/images.png" alt="AIUB" />
+          <div><strong>BSc in Computer Science & Engineering</strong><br/>American International University-Bangladesh (AIUB)</div>
+        </div>
+        <div class="edu card">
+          <img src="assets/download.jpeg" alt="College" />
+          <div><strong>Hajigonj Model Government College</strong></div>
+        </div>
+        <div class="edu card">
+          <img src="assets/download (1).jpeg" alt="School" />
+          <div><strong>Balakhal J.N High School</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="section footer-banner">
+      <div class="thanks card">
+        <h3>Thank You For Visiting My Website</h3>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
